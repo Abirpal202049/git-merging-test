@@ -10,6 +10,13 @@ function multiply(a: number, b: number): number {
     return a * b;
 }
 
+function divide(a: number, b: number): number {
+    if (b === 0) {
+        throw new Error("Division by zero is not allowed.");
+    }
+    return a / b;
+}
+
 function factorial(n: number): number {
     if (n < 0) {
         throw new Error("Factorial is not defined for negative numbers");
